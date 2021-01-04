@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #0d0d0d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.JuegoController">
+   <children>
+      <Label fx:id="lblModo" layoutX="37.0" layoutY="14.0" prefHeight="17.0" prefWidth="438.0" text="Maquina - Dificil" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4968a6" height="50.0" layoutX="415.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Label fx:id="jugador2" alignment="CENTER_RIGHT" layoutX="252.0" layoutY="48.0" prefHeight="48.0" prefWidth="166.0" style="-fx-border-color: #4968a6; -fx-border-width: 5px;" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+         <padding>
+            <Insets right="8.0" />
+         </padding>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dc3c34" height="50.0" layoutX="35.0" layoutY="566.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Label fx:id="jugador1" layoutX="83.0" layoutY="567.0" prefHeight="48.0" prefWidth="166.0" style="-fx-border-color: #dc3c34; -fx-border-width: 5px;" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Label fx:id="marcador2" alignment="CENTER" layoutX="416.0" layoutY="50.0" prefHeight="45.0" prefWidth="45.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="marcador1" alignment="CENTER" layoutX="40.0" layoutY="569.0" prefHeight="45.0" prefWidth="45.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d96f34" height="50.0" layoutX="35.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Label fx:id="marcadorEmpate" alignment="CENTER" layoutX="36.0" layoutY="50.0" prefHeight="45.0" prefWidth="45.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="48.0" prefHeight="48.0" prefWidth="90.0" style="-fx-border-color: #D96F34; -fx-border-width: 5px;" text="Empate" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#b8b8b880" height="437.0" layoutX="173.0" layoutY="113.0" scaleY="0.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#b8b8b880" height="437.0" layoutX="322.0" layoutY="113.0" scaleY="0.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle fx:id="rec3" arcHeight="5.0" arcWidth="5.0" fill="#b8b8b880" height="10.0" layoutX="35.0" layoutY="253.0" scaleX="0.0" stroke="BLACK" strokeType="INSIDE" width="435.0" />
+      <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="#b8b8b880" height="10.0" layoutX="34.0" layoutY="401.0" scaleX="0.0" stroke="BLACK" strokeType="INSIDE" width="435.0" />
+      <Pane fx:id="panelGanador" prefHeight="650.0" prefWidth="500.0" scaleX="0.0" scaleY="0.0" style="-fx-background-color: #DC3C34;">
+         <children>
+            <Label fx:id="lblGanador" alignment="CENTER" layoutX="133.0" layoutY="195.0" prefHeight="57.0" prefWidth="237.0" text="Ganador" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="49.0" />
+               </font></Label>
+            <Label fx:id="lblTag" alignment="CENTER" layoutX="27.0" layoutY="407.0" prefHeight="52.0" prefWidth="448.0" text="tagName" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnJugar" layoutX="60.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnReiniciar" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #14a647;" text="Volver a jugar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalir" layoutX="260.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #f2c53d;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="lbl2" alignment="CENTER" layoutX="185.0" layoutY="116.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl3" alignment="CENTER" layoutX="334.0" layoutY="116.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl4" alignment="CENTER" layoutX="36.0" layoutY="265.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl5" alignment="CENTER" layoutX="185.0" layoutY="265.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl6" alignment="CENTER" layoutX="334.0" layoutY="265.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl7" alignment="CENTER" layoutX="36.0" layoutY="413.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl8" alignment="CENTER" layoutX="185.0" layoutY="413.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl9" alignment="CENTER" layoutX="334.0" layoutY="413.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Label fx:id="lbl1" alignment="CENTER" layoutX="36.0" layoutY="116.0" prefHeight="135.0" prefWidth="135.0" textFill="WHITE" />
+      <Button fx:id="btn1" layoutX="35.0" layoutY="114.0" mnemonicParsing="false" onAction="#casillaBtn1" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn2" layoutX="182.0" layoutY="114.0" mnemonicParsing="false" onAction="#casillaBtn2" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn3" layoutX="330.0" layoutY="114.0" mnemonicParsing="false" onAction="#casillaBtn3" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn6" layoutX="330.0" layoutY="263.0" mnemonicParsing="false" onAction="#casillaBtn6" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn5" layoutX="182.0" layoutY="263.0" mnemonicParsing="false" onAction="#casillaBtn5" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn4" layoutX="35.0" layoutY="263.0" mnemonicParsing="false" onAction="#casillaBtn4" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn9" layoutX="330.0" layoutY="413.0" mnemonicParsing="false" onAction="#casillaBtn9" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn8" layoutX="182.0" layoutY="413.0" mnemonicParsing="false" onAction="#casillaBtn8" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn7" layoutX="35.0" layoutY="413.0" mnemonicParsing="false" onAction="#casillaBtn7" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #0d0d0d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane fx:id="panelOcultar" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #0d0d0d;" visible="false">
+         <children>
+            <Label layoutX="113.0" layoutY="609.0" text="Esperando contrincante" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

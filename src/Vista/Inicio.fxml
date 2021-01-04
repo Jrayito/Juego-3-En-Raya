@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.InicioController">
+   <children>
+      <Pane prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Rectangle fx:id="rectAzul" arcHeight="5.0" arcWidth="5.0" fill="#4968a6" height="19.0" layoutX="145.0" layoutY="418.0" stroke="BLACK" strokeType="INSIDE" width="379.0" />
+            <Rectangle id="recRojo" fx:id="rectRojo" arcHeight="5.0" arcWidth="5.0" fill="#dc3c34" height="374.0" layoutX="213.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+            <Rectangle fx:id="rectVerde" arcHeight="5.0" arcWidth="5.0" fill="#14a647" height="19.0" layoutX="75.0" layoutY="263.0" stroke="BLACK" strokeType="INSIDE" width="385.0" />
+            <Rectangle fx:id="rectAmarillo" arcHeight="5.0" arcWidth="5.0" fill="#f2c53d" height="374.0" layoutX="368.0" layoutY="198.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+            <Rectangle fx:id="tacha2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="138.0" layoutY="148.0" rotate="45.0" scaleY="0.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+            <Rectangle fx:id="tacha1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="138.0" layoutY="148.0" rotate="135.0" scaleY="0.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+            <Circle fx:id="circulo" fill="#1f93ff00" layoutX="460.0" layoutY="505.0" radius="50.0" scaleY="0.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="15.0" />
+            <Label fx:id="lblCargando" alignment="CENTER" layoutX="206.0" layoutY="639.0" prefHeight="30.0" prefWidth="200.0" scaleX="0.0" text="Cargando..." textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

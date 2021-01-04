@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="408.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ConfigController">
+   <children>
+      <Pane prefHeight="410.0" prefWidth="541.0" style="-fx-background-color: #0D0D0D;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Gamer tag:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTag" layoutX="14.0" layoutY="38.0" prefHeight="33.0" prefWidth="258.0" promptText="Escribe aquí">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="11.0" layoutY="103.0" prefHeight="17.0" prefWidth="506.0" text="!Selecciona tu personaje!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGuardar" layoutX="447.0" layoutY="38.0" mnemonicParsing="false" onAction="#Guardar" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: #4968a6;" text="Guardar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="boxNiveles" layoutX="285.0" layoutY="38.0" prefHeight="33.0" prefWidth="150.0" promptText="Dificultad" />
+            <Pane layoutX="186.0" layoutY="137.0" prefHeight="195.0" prefWidth="157.0" style="-fx-background-color: #4968a6; -fx-background-radius: 15px;">
+               <children>
+                  <Pane layoutX="9.0" layoutY="28.0" prefHeight="140.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <children>
+                        <Label fx:id="lblImagen" layoutX="6.0" layoutY="6.0" prefHeight="128.0" prefWidth="128.0" scaleX="0.0" />
+                     </children></Pane>
+               </children>
+            </Pane>
+            <Button fx:id="btnAtras" layoutX="106.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnAtras" prefHeight="48.0" prefWidth="70.0" style="-fx-background-color: #4968a6;" styleClass="siguiente" stylesheets="@main.css" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnSiguiente" layoutX="352.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnSiguiente" prefHeight="48.0" prefWidth="70.0" style="-fx-background-color: #4968a6;" styleClass="siguiente" stylesheets="@main.css" text="&gt;&gt;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSelect" layoutX="175.0" layoutY="345.0" mnemonicParsing="false" onAction="#personajeSeleccion" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #4968a6;" text="Seleccionar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="334.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.PrincipalController">
+   <children>
+      <BorderPane prefHeight="334.0" prefWidth="541.0">
+         <center>
+            <Pane prefHeight="334.0" prefWidth="350.0" style="-fx-background-color: #0D0D0D;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnLocal" layoutX="62.0" layoutY="73.0" mnemonicParsing="false" onAction="#btnLocal" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #f2c53d;" text="Local" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnMaquina" layoutX="62.0" layoutY="143.0" mnemonicParsing="false" onAction="#btnMaquina" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #14a647;" text="Máquina" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnOnline" layoutX="62.0" layoutY="212.0" mnemonicParsing="false" onAction="#btnOnline" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4968a6;" text="Online" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="334.0" prefWidth="217.0" style="-fx-background-color: #dc3c34;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblTag" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="191.0" text="JRayito" textFill="#0d0d0d">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSalir" layoutX="21.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #0D0D0D;" text="Salir" textFill="#dc3c34">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnConfiguracion" layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnConfig" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #0D0D0D;" text="Configuración" textFill="#dc3c34">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="lblFicha" alignment="CENTER" layoutX="43.0" layoutY="68.0" prefHeight="135.0" prefWidth="135.0" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
